@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Axel.dev</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="C:\Users\Axel Remojo\Desktop\portfolio ni axel\images\hero-img.png"
+    />
+    <link
+      rel="stylesheet"
+      href="C:\Users\Axel Remojo\Desktop\portfolio ni axel\css\style.css"
+    />
+  </head>
+  <body>
+    <nav id="sidebar">
+      <div class="side-navigation-wrapper">
+        <div class="x-logo">
+          <h1 id="closeBtn" onclick="openSide()">&#10006;</h1>
+        </div>
+
+        <div class="side-links">
+          <a href="index.html">Home</a>
+          <a href="#about">About Me</a>
+          <a href="#skills">Skills</a>
+          <a href="#myWorks">Projects</a>
+          <a href="#contact">Contact Me</a>
+        </div>
+      </div>
+    </nav>
+
+    <nav id="top-nav">
+      <div class="navigation-wrapper">
+        <div class="logo">
+          <a href="index.html">Axel.dev</a>
+        </div>
+
+        <div class="nav-links">
+          <a class="close-on-mobile" href="index.html">Home</a>
+          <a class="close-on-mobile" href="#about">About Me</a>
+          <a class="close-on-mobile" href="#skills">Skills</a>
+          <a class="close-on-mobile" href="#myWorks">Projects</a>
+          <a class="close-on-mobile" href="#contact">Contact Me</a>
+          <h1 id="openBtn" class="show-on-mobile" onclick="openSide()">
+            &#9776;
+          </h1>
+        </div>
+      </div>
+    </nav>
+
+    <div id="close-overlay" onclick="openSide()"></div>
+
+    <section class="hero-section">
+      <div class="hero-section-wrapper">
+        <div class="hero-text">
+          <h1>Hi, I'm Axel!</h1>
+          <h3>2nd year IT Student and Aspiring</h3>
+          <h3>Full Stack Web Developer</h3>
+          <div class="call-to-action">
+            <button onclick="downloadCV()">Donload CV</button>
+            <button onclick="myWorks()">My Works</button>
+          </div>
+        </div>
+
+        <div class="hero-image">
+          <img
+            src="C:\Users\Axel Remojo\Desktop\portfolio ni axel\images\hero-img.png"
+            alt="axel-avatar"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about-me-section">
+      <div class="about-me-section-wrapper">
+        <div class="section-header">
+          <h1>About Me</h1>
+        </div>
+
+        <div class="lead-text">
+          <p>
+            I am Axel T. Remojo, a 2nd year IT Student from Pamantasan ng
+            Cabuyao (UC), and an aspring full stack web developer.
+          </p>
+        </div>
+
+        <div class="about-me-container">
+          <div class="about-me-image">
+            <img
+              src="C:\Users\Axel Remojo\Desktop\portfolio ni axel\images\about-me.jpeg"
+              alt="about-me-image"
+            />
+          </div>
+
+          <div class="more-details">
+            <p>
+              Currently learning HTML, CSS and JavaScript and other core
+              programming languages top prepare for real-world projects.
+            </p>
+            <p>
+              I believe in continuous learning and aim to grow into a
+              well-rounded developer who solves real-world problems with clean,
+              efficient code.
+            </p>
+            <p>
+              Outside of coding, I enjoy playing online gsmes and browsing
+              content related to my web developing to fuel my passion.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="skills-section">
+      <div class="skills-section-wrapper">
+        <div class="section-header">
+          <h1>Skills</h1>
+        </div>
+
+        <div class="skill-card-container">
+          <div class="skill-card">
+            <div class="skill-image">
+              <img
+                src="C:\Users\Axel Remojo\Desktop\portfolio ni axel\images\html (1).png"
+                alt=""
+              />
+            </div>
+            <div class="skill-name"><h1>HTML</h1></div>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-image">
+              <img
+                src="C:\Users\Axel Remojo\Desktop\portfolio ni axel\images\css.png"
+                alt=""
+              />
+            </div>
+            <div class="skill-name"><h1>CSS</h1></div>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-image">
+              <img
+                src="C:\Users\Axel Remojo\Desktop\portfolio ni axel\images\js.png"
+                alt=""
+              />
+            </div>
+            <div class="skill-name"><h1>JavaScript</h1></div>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-image">
+              <img
+                src="C:\Users\Axel Remojo\Desktop\portfolio ni axel\images\bootstrap.png"
+                alt=""
+              />
+            </div>
+            <div class="skill-name"><h1>Bootstrap</h1></div>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-image">
+              <img
+                src="C:\Users\Axel Remojo\Desktop\portfolio ni axel\images\java (1).png"
+                alt=""
+              />
+            </div>
+            <div class="skill-name"><h1>Java</h1></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="myWorks" class="my-project-section">
+      <div class="my-project-section-wrapper">
+        <div class="section-header">
+          <h1>My Projects</h1>
+        </div>
+
+        <div class="project-card-container">
+          <div class="project-card" onclick="furni()">
+            <div class="project-image">
+              <img
+                src="C:\Users\Axel Remojo\Desktop\portfolio ni axel\images\furni-image.png"
+                alt=""
+              />
+            </div>
+
+            <div class="project-info-container">
+              <div class="project-details">
+                <h1>Furni.</h1>
+                <p>An e-commerce demo website for furnitures.</p>
+              </div>
+
+              <div class="tech-used">
+                <span class="html">HTML</span>
+                <span class="css">CSS</span>
+                <span class="jscript">JavaScript</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card" onclick="archi()">
+            <div class="project-image">
+              <img
+                src="C:\Users\Axel Remojo\Desktop\portfolio ni axel\images\archi-image.png"
+                alt=""
+              />
+            </div>
+
+            <div class="project-info-container">
+              <div class="project-details">
+                <h1>Archi</h1>
+                <p>A landing page for an architecture company.</p>
+              </div>
+
+              <div class="tech-used">
+                <span class="html">HTML</span>
+                <span class="css">CSS</span>
+                <span class="jscript">JavaScript</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card" onclick="finance()">
+            <div class="project-image">
+              <img
+                src="C:\Users\Axel Remojo\Desktop\portfolio ni axel\images\finance-image.png"
+                alt=""
+              />
+            </div>
+
+            <div class="project-info-container">
+              <div class="project-details">
+                <h1>Flow Finance</h1>
+                <p>A landing page for a finance company.</p>
+              </div>
+
+              <div class="tech-used">
+                <span class="html">HTML</span>
+                <span class="css">CSS</span>
+                <span class="jscript">JavaScript</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+      <div class="contact-section-wrapper">
+        <div class="section-header">
+          <h1>Contact Me</h1>
+        </div>
+
+        <div class="contact-form">
+          <input type="text" name="name" id="name" placeholder="Name: " />
+          <input type="email" name="email" id="email" placeholder="E-mail: " />
+          <textarea
+            name="message"
+            id="message"
+            placeholder="Message:"
+            rows="6"
+            style="resize: none"
+          ></textarea>
+          <button>Submit</button>
+        </div>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div class="footer-content">
+        <p>&copy; 2025 Axel Remojo. All rights reserved.</p>
+        <div class="footer-links">
+          <a href="mailto:axelremojo@gmail.com" target="_blank">Email</a>
+          <a href="https://www.facebook.com/axelremojo.24/" target="_blank"
+            >Facebook</a
+          >
+          <a href="https://www.instagram.com/a._xxel/" target="_blank"
+            >Instagram</a
+          >
+        </div>
+      </div>
+    </footer>
+    <script src="C:\Users\Axel Remojo\Desktop\portfolio ni axel\js\script.js"></script>
+  </body>
+</html>
